@@ -1,4 +1,5 @@
-from utils import HH
+from classes.class_HH import HH
+from classes.class_DBCreate import DBCreate
 
 company_names = [
     'CAPYBARA IT AGENCY',
@@ -19,5 +20,7 @@ company_names = [
 
 hh = HH(company_names)
 hh.get_request()
-hh.get_ids()
-print(hh.vacancies_url)
+hh.save_data_hh()
+dbc = DBCreate()
+dbc.creating_db()
+dbc.creating_table()

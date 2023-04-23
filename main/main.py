@@ -3,6 +3,7 @@ from classes.class_DBCreate import DBCreate
 from classes.class_DBManager import DBManager
 
 if __name__ == "__main__":
+
     # Запрашиваем названия компаний
     company_names = []
     for i in range(10):

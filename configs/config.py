@@ -1,7 +1,7 @@
 from configparser import ConfigParser
 
 
-def config(filename="/Users/mac/Desktop/course_project_5/configs/database.ini", section="postgresql"):
+def config(filename="", section="postgresql"):
     # create a parser
     parser = ConfigParser()
     # read config file
@@ -17,7 +17,7 @@ def config(filename="/Users/mac/Desktop/course_project_5/configs/database.ini", 
     return db
 
 
-def config_hh(filename="/Users/mac/Desktop/course_project_5/configs/database_hh.ini", section="postgresql"):
+def config_hh(filename="", section="postgresql"):
     # create a parser
     parser = ConfigParser()
     # read config file
